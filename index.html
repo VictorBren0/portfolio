@@ -1,34 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Portifolio</title>
 </head>
+
 <body>
-    <div class="background">
+    <div class="scroll-wrapper">
         <header>
+            <div class="square"></div>
             <div class="logo">
                 <img src="image/logo_verde.png" alt="">
             </div>
-            <div class="cabeçalho-link">
+            <div class="cabecalho-link">
                 <li>
-                    <a href="#">INICIO</a>
+                    <a href="#inicio" class="active">INICIO</a>
                 </li>
                 <li>
-                    <a href="#">SOBRE</a>
+                    <a href="#perfil" class="">SOBRE</a>
                 </li>
                 <li>
-                    <a href="#">PORTIFOLIO</a>
+                    <a href="#" class="">PORTIFOLIO</a>
                 </li>
                 <li>
-                    <a href="#">CONTATO</a>
-                </li>          
+                    <a href="#" class="">CONTATO</a>
+                </li>
             </div>
         </header>
+
+        <!--inicio-->
+        <div class="inicio" id="inicio">
+            <div class="container-text">
+                <div class="text">
+                    <h1>Desenvolvedor
+                        <br><span class="typing"></span>
+                    </h1>
+                    <p>a capa transmite a essência do meu trabalho
+                        <br> como desenvolvedor Full Stack.
+                    </p>
+                    <div class="image-container">
+                        <img src="image/logo_branca.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--perfil-->
+        <div class="perfil" id="perfil">
+            <img src="image/perfil.png" alt="">
+            <div class="text-profile">
+                <h1>Victor Breno</h1>
+                <p>Sou um estudante de Análise e Desenvolvimento de
+                    <br> Sistemas de 22 anos de idade, de Aracaju-SE, que tem uma
+                    <br> grande paixão pela programação desde os 16 anos e
+                    <br>estou focado em aprimorar minhas habilidades em React Native,
+                    <br> React e Node.js para se tornar um desenvolvedor Full-Stack
+                    <br> altamente qualificado e experiente. Além disso, sou
+                    <br>estagiário do programa VELOZ da faculdade UniNassau,
+                    <br> onde tenho a oportunidade de aprimorar ainda mais minhas
+                    <br>habilidades em programação e contribuir para o
+                    <br>desenvolvimento de soluções tecnológicas inovadoras.
+                </p>
+                <div class="image-container">
+                    <img src="image/logo_branca.png" alt="">
+                </div>
+                <div class="container-icons">
+                    <div class="icon-list">
+                        <img src="image/image 1.png" alt="">
+                        <img src="image/image 2.png" alt="">
+                        <img src="image/image 3.png" alt="">
+                        <img src="image/image 4.png" alt="">
+                        <img src="image/image 5.png" alt="">
+                        <img src="image/image 6.png" alt="">
+                        <img src="image/image 7.png" alt="">
+                        <img src="image/image 8.png" alt="">
+                        <img src="image/image 9.png" alt="">
+                        <img src="image/image 10.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    
+
+  
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 </body>
+
 </html>
