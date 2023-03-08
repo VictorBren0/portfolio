@@ -1,44 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    
     <link rel="stylesheet" href="style.css">
-    <title>Portifolio</title>
 </head>
-
 <body>
-    <div class="scroll-wrapper">
-        <header>
-            <div class="square"></div>
+    <div class="scroll-up-btn">
+        <ion-icon name="chevron-up-outline"></ion-icon>
+    </div>
+    <div class="navbar">
+        <div class="max-width">
             <div class="logo">
                 <img src="image/logo_verde.png" alt="">
             </div>
-            <div class="cabecalho-link">
-                <li>
-                    <a href="#inicio" class="active">INICIO</a>
-                </li>
-                <li>
-                    <a href="#perfil" class="">SOBRE</a>
-                </li>
-                <li>
-                    <a href="#" class="">PORTIFOLIO</a>
-                </li>
-                <li>
-                    <a href="#" class="">CONTATO</a>
-                </li>
+            <ul class="menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#teams">Equipe</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="menu-btn">
+                <ion-icon name="menu-outline"></ion-icon>
             </div>
-        </header>
+        </div>
+    </div>
 
-        <!--inicio-->
-        <div class="inicio" id="inicio">
-            <div class="container-text">
-                <div class="text">
-                    <h1>Desenvolvedor
-                        <br><span class="typing"></span>
-                    </h1>
+    <!--home inicio-->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Desenvolvedor</div>
+                <div class="text-2"><span class="typing"></div>
+                <div class="text-3">
                     <p>a capa transmite a essência do meu trabalho
                         <br> como desenvolvedor Full Stack.
                     </p>
@@ -48,49 +45,173 @@
                 </div>
             </div>
         </div>
+    </section>
 
-        <!--perfil-->
-        <div class="perfil" id="perfil">
-            <img src="image/perfil.png" alt="">
-            <div class="text-profile">
-                <h1>Victor Breno</h1>
-                <p>Sou um estudante de Análise e Desenvolvimento de
-                    <br> Sistemas de 22 anos de idade, de Aracaju-SE, que tem uma
-                    <br> grande paixão pela programação desde os 16 anos e
-                    <br>estou focado em aprimorar minhas habilidades em React Native,
-                    <br> React e Node.js para se tornar um desenvolvedor Full-Stack
-                    <br> altamente qualificado e experiente. Além disso, sou
-                    <br>estagiário do programa VELOZ da faculdade UniNassau,
-                    <br> onde tenho a oportunidade de aprimorar ainda mais minhas
-                    <br>habilidades em programação e contribuir para o
-                    <br>desenvolvimento de soluções tecnológicas inovadoras.
-                </p>
-                <div class="image-container">
-                    <img src="image/logo_branca.png" alt="">
+    <!--sessão sobre-->
+    <section class="about" id="about">
+        <div class="max-width">
+            <div class="about-content">
+                <div class="column left">
+                    <img src="image/perfil.png" alt="">
                 </div>
-                <div class="container-icons">
-                    <div class="icon-list">
-                        <img src="image/image 1.png" alt="">
-                        <img src="image/image 2.png" alt="">
-                        <img src="image/image 3.png" alt="">
-                        <img src="image/image 4.png" alt="">
-                        <img src="image/image 5.png" alt="">
-                        <img src="image/image 6.png" alt="">
-                        <img src="image/image 7.png" alt="">
-                        <img src="image/image 8.png" alt="">
-                        <img src="image/image 9.png" alt="">
-                        <img src="image/image 10.png" alt="">
+                <div class="column right">
+                    <div class="text">Victor Breno</div>
+                    <p>Sou um estudante de Análise e Desenvolvimento de
+                        Sistemas de 22 anos de idade, de Aracaju-SE, que tem uma
+                        grande paixão pela programação desde os 16 anos e
+                        estou focado em aprimorar minhas habilidades em React Native,
+                        React e Node.js para se tornar um desenvolvedor Full-Stack
+                        altamente qualificado e experiente. Além disso, sou
+                        estagiário do programa VELOZ da faculdade UniNassau,
+                        onde tenho a oportunidade de aprimorar ainda mais minhas
+                        habilidades em programação e contribuir para o
+                        desenvolvimento de soluções tecnológicas inovadoras.
+                    </p>
+                    <div class="image-container">
+                        <img src="image/logo_branca.png" alt="">
+                    </div>
+                    <a href="#">Download CV</a>
+                    <div class="container-icons">
+                        <div class="icon-list">
+                            <img src="image/image 1.png" alt="">
+                            <img src="image/image 2.png" alt="">
+                            <img src="image/image 3.png" alt="">
+                            <img src="image/image 4.png" alt="">
+                            <img src="image/image 5.png" alt="">
+                            <img src="image/image 6.png" alt="">
+                            <img src="image/image 7.png" alt="">
+                            <img src="image/image 8.png" alt="">
+                            <img src="image/image 9.png" alt="">
+                            <img src="image/image 10.png" alt="">
+                        </div>
                     </div>
                 </div>
+                
             </div>
         </div>
-    </div>
+    </section>
 
-  
+     <!--sessão equipe-->
+     <section class="teams" id="teams">
+        <div class="max-width">
+            <h2 class="title"></h2>
+           <div class="carousel owl-carousel ">
+               <div class="card">
+                   <div class="box">
+                       <img src="image/imc.png" alt="">
+                       <div class="text">Calculo IMC</div>
+                       <p>HTML | JAVASCRIPT</p>
+                       <div class="rectangle">
+                       <img src="image/Rectangle.png" alt="">
+                    </div>
+                   </div>
+               </div>
+               <div class="card">
+                <div class="box">
+                    <img src="image/img-2.jpg" alt="">
+                    <div class="text">Fernando</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatibus beatae iste aliquid laborum nobis.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <img src="image/img-3.jpg" alt="">
+                    <div class="text">Mariana</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatibus beatae iste aliquid laborum nobis.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <img src="image/img-4.jpg" alt="">
+                    <div class="text">Fabiana</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatibus beatae iste aliquid laborum nobis.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <img src="image/img-5.jpg" alt="">
+                    <div class="text">Sueli</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatibus beatae iste aliquid laborum nobis.</p>
+                </div>
+            </div>
+           </div>
+        </div>
+    </section>
 
+    <!--Sessão contato-->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contato</h2>
+            <div class="contact-content">
+               <div class="column left">
+                   <div class="text">Fale Conosco</div>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit laudantium saepe, voluptate libero fugiat in, dolores voluptatem distinctio animi et iusto, amet possimus tenetur modi cupiditate. Odio, numquam fuga perferendis vitae ullam eum, ipsam tempora unde nisi optio vero recusandae ipsa asperiores rem, labore impedit laudantium officiis maiores natus.</p>
+               
+               <div class="icons">
+                   <div class="row">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <div class="info">
+                            <div class="head">Nome</div>
+                            <div class="sub-title">Ricardo Ferreira</div>
+                        </div>
+                   </div>
+                   <div class="row">
+                    <ion-icon name="earth-outline"></ion-icon>
+                    <div class="info">
+                        <div class="head">Endereço</div>
+                        <div class="sub-title">Campo Grande, MS</div>
+                    </div>
+               </div>
+               <div class="row">
+                <ion-icon name="person-outline"></ion-icon>
+                <div class="info">
+                    <div class="head">Email</div>
+                    <div class="sub-title">aeiou@gmail.com</div>
+                </div>
+           </div>
+               </div>
+            </div><!--column left-->
+            <div class="column rigth">
+                <div class="text">Mensagem</div>
+                <form action="#">
+                    <div class="fields">
+                        <div class="field name">
+                            <input type="text" placeholder="Nome" required>
+                        </div>
+                        <div class="field email">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="field">
+                            <input type="text" placeholder="Sobrenome" required>
+                        </div>
+                        <div class="field textarea">
+                           <textarea  cols="30" rows="10" placeholder="Escrever...." required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!--sessão  footer-->
+    <footer>
+        <span>Criado por <a href="#">Front</a> | Todos os direitos reservado 2021</span>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-</body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
+</body>
 </html>
