@@ -23,8 +23,6 @@ html{
     font-family: 'Ubuntu', sans-serif;
     z-index: 999;
     transition: all 0.3s ease;
-
-    
 }
 .navbar.sticky{
     background-color: #1F1D26;
@@ -58,7 +56,7 @@ html{
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: #00804b;
+    color: #02735E;
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
@@ -122,8 +120,7 @@ html{
 .scroll-up-btn.show{
     bottom: 30px;
     opacity: 1;
-    pointer-events:auto;
-    
+    pointer-events:auto;   
 }
 
 /*  todos os codigos similares  */
@@ -150,7 +147,7 @@ section .title::before{
     transform: translateX(-50%);
 }
 
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .portifolio, .contact, footer{
     font-family: 'Roboto', sans-serif;
     background: #1F1D26;
 }
@@ -247,162 +244,54 @@ section .title::before{
 }
 
 
-/*  sessão serviços */
-.services, .teams{
-    background: #111;
+/*  sessão portifolio  */
+.portifolio{
     color: #fff;
 }
-.services .title::before,
-.teams .title::before{
-    background: #fff;
-}
-.services .title::after,
-.teams .title::after{
-    background: #111;
-    content: "Que oferecemos";
-}
-.services .serv-content .card{
-    width: calc(33% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 20px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.services .serv-content .card:hover{
-    background: #00804b;
-}
-.services .serv-content .card .box{
-    transition: all 0.3s ease;
-}
-.services .serv-content .card:hover .box{
-    transform: scale(1.05);
-}
-.services .serv-content .card ion-icon{
-    font-size: 70px;
-    color: #00804b;
-}
-.services .serv-content .card:hover ion-icon{
-    color: #fff;
-}
-.services .serv-content .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-/*  sessão especialidades  */
-.skills .title::after{
-    content: "Que faço";
-}
-.skills .skills-content .column{
-    width: calc(50% - 30px);
-}
-.skills .skills-content .left .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-.skills .skills-content .left p{
-    text-align: justify;
-}
-.skills .skills-content .left a{
-    display: inline-block;
-    background: #00804b;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 16px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid #00804b;
-    transition: all 0.3s ease;
-}
-.skills .skills-content .left a:hover{
-    color: #00804b;
-    background: none;
-}
-.skills .skills-content .right .bars{
-    margin-bottom: 15px;
-}
-.skills .skills-content .right .info{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.skills .skills-content .right span{
-    font-weight: 500;
-    font-size: 18px;
-}
-.skills .skills-content .right .line{
-    width: 100%;
-    height: 5px;
-    background: #ccc;
-    position: relative;
-}
-.skills .skills-content .right .line::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: #00804b;
-}
-.skills .skills-content .right .html::before{
-    width: 93%;
-}
-.skills .skills-content .right .css::before{
-    width: 85%;
-}
-.skills .skills-content .right .js::before{
-    width: 87%;
-}
-.skills .skills-content .right .php::before{
-    width: 47%;
-}
-.skills .skills-content .right .mysql::before{
-    width: 42%;
-}
-
-
-/*  sessão equipe  */
-.teams .title::after{
+.portifolio .title::after{
     content: "Meu Portifolio";
+    color: #fff;
 }
-.teams .carousel .card{
-    background: #222;
+.portifolio .title::before{
+    background: #02735E;
+}
+.portifolio .carousel .card{
     border-radius: 6px;
-    padding: 29px 35px;
+    padding: 20px 35px;
     text-align: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover{
-    background: #09A892;
+.portifolio .carousel .card:hover{
+    background: #02735E;
 }
-.teams .carousel .card img{
+.portifolio .carousel .card img{
     width: 250px;
     height: 250px;
     object-fit: cover;
-    border: 5px solid #00804b;
+    border: 5px solid #02735E;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img{
+.portifolio .carousel .card:hover img{
     border-color: #fff;
 }
-.teams .carousel .card .box{
+.portifolio .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+.portifolio .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+.portifolio .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+    color: #fff;
+}
+.portifolio .carousel .card p{
+    color: #fff;
 }
 .owl-dots{
     text-align: center;
@@ -413,7 +302,7 @@ section .title::before{
     height: 14px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid #00804b!important;
+    border: 2px solid #02735E!important;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -422,115 +311,43 @@ section .title::before{
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: #00804b!important;
+    background: #02735E!important;
 }
+
 /*  sessão Contato  */
 .contact .title::after{
-    content: "Fale conosco";
-}
-.contact .contact-content .column{
-    width: calc(50% - 30px);
-}
-.contact .contact-content{
-    align-items: flex-start;
-}
-.contact .contact-content .left p{
-    text-align: justify;
-}
-.contact .contact-content .text{
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-.contact .contact-content .left .icons{
-    margin: 10px 0;
-}
-.contact .contact-content .row{
-    display: flex;
-    height: 65px;
-    align-items: center;
-}
-.contact .contact-content .row .info{
-    margin-left: 30px
-}
-.contact .contact-content .row .info .head{
-    font-weight: 500;
-}
-.contact .contact-content .row .info .sub-title{
-    color: #333;
-}
-.contact .contact-content .row ion-icon{
-    font-size: 25px;
-    color: #00804b;
-}
-.contact .rigth form .fields{
-    display: flex;
-}
-.contact .rigth form .field,
-.contact .rigth form .fields .field{
-    width: 100%;
-    height: 45px;
-    margin-bottom: 15px;
-}
-.contact .rigth form .field input,
-.contact .rigth form .textarea textarea{
-    width: 100%;
-    height: 100%;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    outline: none;
-    padding: 0 15px;
-    font-size: 17px;
-    font-family: 'Roboto',sans-serif;
-}
-.contact .rigth form .name{
-    margin-right: 10px;
-}
-.contact .rigth form .email{
-    margin-left: 10px;
-}
-.contact .rigth form .textarea{
-    width: 100%;
-    height: 80px;
-}
-.contact .rigth form .textarea textarea{
-    padding-top: 10px;
-    resize: none;
-}
-.contact .rigth form .button{
-    width: 170px;
-    height: 47px;
-}
-.contact .rigth form .button button{
-    width: 100%;
-    height: 100%;
-    border: 2px solid #00804b;
-    background: #00804b;
+    content: "Contato";
     color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
-.contact .rigth form .button button:hover{
-    color: #00804b;
-    background: none;
+.contact .title::before{
+    background: #02735E;
 }
 
 /*  sessão footer  */
 footer{
-    background: #111;
+    background: #02735E;
     padding: 20px 23px;
     color: #fff;
     text-align: center;
 }
+.logo-contact {
+    width: 40px;
+    height: 40px;
+    padding: 50px;
+    color: #fff;
+}
+.logo-container{
+    width: 100%;
+    justify-content: space-around;
+
+}
 footer span a{
-    color: #00804b;
+    color: #1F1D26;
     text-decoration: none;
 }
 footer span a:hover{
     text-decoration: underline;
+    color: #fff;
 }
 
 
