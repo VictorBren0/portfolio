@@ -322,7 +322,6 @@ section .title::before{
     background: #02735E;
 }
 
-/*  sessão footer  */
 footer{
     background: #02735E;
     padding: 20px 23px;
@@ -430,6 +429,18 @@ footer span a:hover{
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
+    }
+    footer span a{
+        font-size: 14px;
+    }
+    footer  span{
+        font-size: 14px;
+    }
+    .logo-contact {
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        color: #fff;
     }
 }
 @media (max-width: 690px){
