@@ -390,6 +390,9 @@ footer span a:hover{
     .navbar .menu.active{
         left: 0;
     }
+    .navbar .logo img {
+        display: none;
+      }    
     .navbar .menu li{
         display: block;
     }
@@ -427,9 +430,6 @@ footer span a:hover{
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
-    }
-    footer{
-        margin-top: 15px;
     }
 }
 @media (max-width: 690px){
