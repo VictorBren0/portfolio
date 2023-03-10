@@ -360,7 +360,7 @@ footer {
 
 /*  sessão Contato  */
 .contact .title::after {
-    content: "Contato";
+    content: "Contatos";
     color: #fff;
 }
 
