@@ -169,14 +169,14 @@ section .title::before {
 
 .about,
 .portfolio,
-.contact,
+.tech,
 footer {
     font-family: 'Roboto', sans-serif;
     background: #1F1D26;
 }
 
 .about .about-content,
-.contact .contact-content {
+.tech .contact-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -252,25 +252,6 @@ footer {
     height: 700px;
     object-fit: cover;
     border-radius: 6px;
-}
-
-.about .about-content .right .container-icons {
-    position: relative;
-    background-color: #fff;
-    padding: 8px;
-    border-radius: 10px;
-    margin-top: 100px;
-}
-
-.about .about-content .right .icon-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.about .about-content .right .icon-list img {
-    margin: 10px;
 }
 
 
@@ -358,16 +339,38 @@ footer {
     background: #02735E !important;
 }
 
-/*  sessão Contato  */
-.contact .title::after {
-    content: "Contatos";
+/*  sessão Tecnologias  */
+.tech .title::after {
+    content: "Minhas Tecnologias";
     color: #fff;
 }
-
-.contact .title::before {
+.tech .title::before {
     background: #02735E;
 }
+.tech .container-icons {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 100px 0px;
+}
+.tech .icon-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
+.tech .icon-list img {
+    height: 3rem; 
+    margin: 20px 20px;
+    transition: all 0.5s ease;
+}
+.tech .icon-list img:hover {
+    height: 4rem;
+}
+
+
+/*  sessão footer  */
 footer {
     background: #02735E;
     padding: 20px 23px;
@@ -487,7 +490,7 @@ footer span a:hover {
         flex: 100%;
     }
 
-    .contact .contact-content .column {
+    .tech .contact-content .column {
         width: 100%;
         margin-bottom: 35px;
     }
@@ -505,6 +508,10 @@ footer span a:hover {
         height: 20px;
         padding: 10px;
         color: #fff;
+    }
+    .tech .icon-list img {
+        width: 30px;
+        height: 30px;
     }
 }
 
