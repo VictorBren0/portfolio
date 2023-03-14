@@ -230,7 +230,8 @@ footer {
 }
 
 .about .about-content .right a {
-    display: inline-block;
+    display: grid;
+    place-items: center;
     background: #09A892;
     color: #fff;
     font-size: 20px;
@@ -490,11 +491,6 @@ footer span a:hover {
         flex: 100%;
     }
 
-    .tech .contact-content .column {
-        width: 100%;
-        margin-bottom: 35px;
-    }
-
     footer span a {
         font-size: 14px;
     }
@@ -510,8 +506,12 @@ footer span a:hover {
         color: #fff;
     }
     .tech .icon-list img {
-        width: 30px;
-        height: 30px;
+        height: 2rem; 
+        margin: 10px 10px;
+        transition: all 0.5s ease;
+    }
+    .tech .icon-list img:hover {
+        height: 3rem;
     }
 }
 
