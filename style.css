@@ -55,6 +55,9 @@ html {
     list-style: none;
     display: inline-block;
 }
+.navbar .menu li a.active {
+    color: #02735E;
+  }
 
 .navbar .menu li a {
     color: #fff;
@@ -69,7 +72,7 @@ html {
 }
 
 .navbar.sticky .menu li a:hover {
-    color: #fff;
+    color: #02735E;
 }
 
 /*  Home   inicio  */
