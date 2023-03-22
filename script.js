@@ -47,3 +47,34 @@ $(document).ready(function(){
         }
     });
 });
+$(document).ready(function() {
+
+    $('.navbar .menu li:first-child a').addClass('active');
+
+    var currentLocation = window.location.href;
+    $('.navbar .menu li a').each(function() {
+      if ($(this).attr('href') === currentLocation) {
+        $(this).addClass('active');
+      }
+    });
+    
+    $('.navbar .menu li a').on('click', function(e) {
+      e.preventDefault();
+      var target = $(this).data('target');
+      $('.navbar .menu li a').removeClass('active');
+      $(this).addClass('active');
+      $('html, body').animate({
+        scrollTop: $('#' + target).offset().top
+      }, 500);
+    });
+  });
+  
+  window.onload = function() {
+    window.scrollTo(0, 0);
+  };
+  
+  
+  
+  
+  
+  
