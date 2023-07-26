@@ -73,6 +73,18 @@ $(document).ready(function() {
     window.scrollTo(0, 0);
   };
   
+  $(document).ready(function() {
+    // Aplica a classe 'hidden' a todos os elementos que desejam esconder inicialmente
+    $('.scroll-up-btn, .navbar, .home-content, .about-content, .content-card, .container-icons').addClass('hidden');
+    
+    // Configuração dos waypoints para os elementos com a classe .hidden
+    $('.hidden').waypoint({
+        handler: function() {
+            $(this.element).addClass('visible');
+        },
+        offset: '85%' // A classe 'visible' será adicionada quando o elemento estiver a 85% do topo do viewport
+    });
+});
   
   
   

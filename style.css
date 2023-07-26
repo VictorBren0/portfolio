@@ -17,6 +17,30 @@ html {
     margin: auto;
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1F1D26;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color:#02735E;
+    border-radius: 20px;
+}
+
+/* Defina a opacidade inicial como zero para os elementos com a classe .hidden */
+.hidden {
+    opacity: 0;
+    transition: opacity 0.8s ease, transform 0.8s ease; /* Adiciona uma transição suave para o efeito de aparecimento */
+}
+
+/* Quando a classe 'visible' for adicionada, a opacidade será alterada para 1 */
+.visible {
+    opacity: 1;
+}
+
 /*  navbar   inicio*/
 .navbar {
     position: fixed;
@@ -42,12 +66,12 @@ html {
 
 .navbar .logo {
     position: absolute;
-    height: 70px;
-    width: 70px;
+    height: 180px;
+    width: 180px;
     display: inline-flex;
     cursor: pointer;
     justify-content: center;
-    right: 90%;
+    right: 85%;
     transition: all 0.3s ease;
 }
 
@@ -175,9 +199,8 @@ section .title::before {
 .tech,
 footer {
     font-family: 'Roboto', sans-serif;
-    background: #1F1D26;
+    background: #1D1D2E;
 }
-
 .about .about-content,
 .tech .contact-content {
     display: flex;
@@ -262,61 +285,92 @@ footer {
 /*  sessão portfolio  */
 .portfolio {
     color: #fff;
+    height: 100vh;
 }
 
 .portfolio .title::after {
-    content: "Meu Portfólio";
+    content: "Principais Projetos";
     color: #fff;
+    margin-top: 4rem;
+}
+
+.content-card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    margin-top: 8rem;
+    transition: all 0.5s ease;
+    position: relative;
+    border-radius: 15px;
+    flex-direction: column;
+}
+
+.content-card img {
+    width: 450px;
+    height: 300px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.info-item {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.content-card:hover {
+    transform: translateY(-10px);
+}
+
+.content-card:hover .info-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.content-card:hover img {
+    filter: brightness(34%);
+}
+
+.title-card {
+    font-size: 24px;
+    margin-top: 1rem;
+    color: #ffffff;
+}
+
+.button-card1 {
+    background: linear-gradient(180deg, #0CB1A5 0%, #0A6366 100%);
+    border-radius: 15px;
+    color: #ffffff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.button-card2 {
+    background: #ffffff;
+    border-radius: 15px;
+    color: #000000;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.button-card1:hover, .button-card2:hover {
+    filter: brightness(80%);
 }
 
 .portfolio .title::before {
     background: #02735E;
-}
-
-.portfolio .carousel .card {
-    border-radius: 6px;
-    padding: 20px 35px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.portfolio .carousel .card:hover {
-    background: #02735E;
-}
-
-.portfolio .carousel .card img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border: 5px solid #02735E;
-    transition: all 0.3s ease;
-}
-
-.portfolio .carousel .card:hover img {
-    border-color: #fff;
-}
-
-.portfolio .carousel .card .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.portfolio .carousel .card:hover .box {
-    transform: scale(1.05);
-}
-
-.portfolio .carousel .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-    color: #fff;
-}
-
-.portfolio .carousel .card p {
-    color: #fff;
 }
 
 .owl-dots {
@@ -373,7 +427,6 @@ footer {
     height: 4rem;
 }
 
-
 /*  sessão footer  */
 footer {
     background: #02735E;
@@ -383,9 +436,9 @@ footer {
 }
 
 .logo-contact {
-    width: 40px;
-    height: 40px;
-    padding: 50px;
+    width: 30px;
+    height: 30px;
+    padding: 30px;
     color: #fff;
 }
 
